@@ -29,17 +29,17 @@
             color: #ff69b4; /* Màu hồng đậm */
             margin-top: 10px;
         }
-        p {
+        .intro {
+            display: flex;
+            align-items: center; /* Căn logo và văn bản ngang hàng */
             font-size: 18px;
             margin: 10px 0;
             color: #333; /* Màu chữ đen */
-            display: flex;
-            align-items: center; /* Canh giữa logo và text */
         }
-        p img.logo {
+        .intro img.logo {
             width: 30px; /* Kích thước logo trường */
             height: 30px;
-            margin-left: 10px; /* Khoảng cách giữa logo và chữ */
+            margin-right: 10px; /* Khoảng cách giữa logo và chữ */
         }
         .social-links {
             display: flex;
@@ -66,10 +66,10 @@
     <div class="container">
         <img class="profile-pic" src="https://raw.githubusercontent.com/vuonghaiahn/vuonghaiahn.github.io/refs/heads/main/webcanhan.jpg" alt="My Photo">
         <h1>Hai Anh Vuong</h1>
-        <p>
-            B.S. in Data Science, National Economics University, 2024 - 2028
-            <img class="logo" src="Logo-NEU.png" alt="NEU Logo">
-        </p>
+        <div class="intro">
+            <img class="logo" src="https://raw.githubusercontent.com/vuonghaiahn/vuonghaiahn.github.io/main/Logo-NEU.png" alt="NEU Logo">
+            B.S. in Data Science, NEU
+        </div>
         <div class="social-links">
             <a href="https://www.facebook.com/profile.php?id=100071894710749" target="_blank">
                 <i class="fab fa-facebook"></i> Facebook
@@ -84,4 +84,3 @@
     </div>
 </body>
 </html>
-
