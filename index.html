@@ -14,6 +14,25 @@
             margin: 0;
             padding: 0;
         }
+        .navbar {
+            background-color: #ff69b4; /* Thanh điều hướng màu hồng đậm */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: flex-start; /* Căn trái các mục */
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: white; /* Màu chữ trắng */
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #ffe4e1; /* Đổi màu chữ khi hover */
+        }
         .container {
             padding: 50px;
             text-align: left; /* Căn toàn bộ nội dung sang trái */
@@ -63,6 +82,13 @@
     </style>
 </head>
 <body>
+    <!-- Thanh điều hướng -->
+    <div class="navbar">
+        <a href="#">Publications</a>
+        <a href="#">Blog</a>
+        <a href="#">CV</a>
+    </div>
+    
     <div class="container">
         <img class="profile-pic" src="https://raw.githubusercontent.com/vuonghaiahn/vuonghaiahn.github.io/refs/heads/main/webcanhan.jpg" alt="My Photo">
         <h1>Hai Anh Vuong</h1>
